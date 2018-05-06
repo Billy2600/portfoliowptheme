@@ -1,0 +1,98 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+html {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	overflow-x: hidden;
+	color: #fff;
+	font-size: 100%;
+	font-family: Arial, Verdana, Georgia;
+	background-color: #25274D;
+}
+
+/* link stuff */
+a:link {
+	color: #2E9CCA;
+	text-decoration: none;
+}
+a:visited {
+	color: #2E9CCA;
+	text-decoration: none;
+}
+a:active {
+	color: #6ebcde;
+	text-decoration: none;
+}
+a:hover {
+	color: #6ebcde;
+	text-decoration: none;
+}
+
+#topnav {
+	width: 100%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	margin-bottom: 0%;
+	text-align: center;
+	border-bottom: 2px solid #acd9ec;
+}
+
+#topnav a {
+	font-size: 200%;
+	padding-left: 2%;
+}
+
+#hero {
+	background-image: url("img/herobg.png");
+	text-align: center;
+	font-size: 300%;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #29648A;
+}
+
+#about {
+	margin-top: 0%;
+	background-color: #464866;
+}
+
+#skills {
+	overflow: hidden;
+	z-index: 2;
+	background-color: #AAABB8;
+	color: #25274D;
+}
+
+#projects {
+	z-index: -1;
+	padding-top: 5%;
+	background-color: #29648A;
+}
+
+.angledcomponent {
+	background-color: #AAABB8;
+	position: absolute;
+	width: 100%;
+	margin-top: -2%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	transform: skewY(2deg);
+	z-index: 1;
+}
+
+.skillslist {
+	width: 20%;
+	float: left;
+	padding-left: 0.2%;
+}
