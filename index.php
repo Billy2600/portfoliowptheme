@@ -52,7 +52,6 @@ get_header(); ?>
 			<li>Windows installation and administration</li>
 		</ul>
 	</section>
-	<div class="angledcomponent"></div>
 
 	<section id="projects">
 		<h2>Projects</h2>
