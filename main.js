@@ -1,5 +1,7 @@
 jQuery( document ).ready(function() {
 	showtab(0, 5);
+
+	jQuery("#hero").css("margin-top", jQuery("#topnav").height() * 1.5);
 });
 
 function showtab(no, total)
