@@ -14,38 +14,46 @@ get_header(); ?>
 	<section id="skills">
 		<h1 id="skills">Skills</h1>
 		You'll find my skills pretty varied, but here's some of what I can do and/or have experience with: <br />
-		<ul class="skillslist">
-			<li>HTML5</li>
-			<li>CSS3</li>
-			<li>PHP5</li>
-			<li>MySQL</li>
-			<li>Javascript</li>
+		<div class="tablist">
+			<a class="firsttab" href="javascript:showtab(0,5)">Web</a>
+			<a href="javascript:showtab(1,5)">Games</a>
+			<a href="javascript:showtab(2,5)">.NET</a>
+			<a href="javascript:showtab(3,5)">QA</a>
+			<a href="javascript:showtab(4,5)">IT</a>
+		</div>
+
+		<ul class="skillslist" id="tab_0">
+			<li class="firstitem fiftypercent">HTML5</li>
+			<li class="ninetypercent">CSS3</li>
+			<li class="seventypercent">PHP5</li>
+			<li class="eightypercent">MySQL</li>
+			<li class="sixtypercent">Javascript</li>
 			<li>JQuery</li>
 		</ul>
-		<ul class="skillslist">
-			<li>C/C++</li>
-			<li>Limited OpenGL experience</li>
-			<li>Limited DirectX experience</li>
-			<li>Memory management (heap and stack)</li>
-			<li>Standard template library</li>
-			<li>Boost library</li>
+		<ul class="skillslist" id="tab_1">
+			<li class="firstitem ninetypercent">C/C++</li>
+			<li class="eightypercent">Limited OpenGL experience</li>
+			<li class="seventypercent">Limited DirectX experience</li>
+			<li class="sixtypercent">Memory management (heap and stack)</li>
+			<li class="fiftypercent">Standard template library</li>
+			<li class="fiftypercent">Boost library</li>
 		</ul>
-		<ul class="skillslist">
-			<li>C# .NET</li>
+		<ul class="skillslist" id="tab_2">
+			<li class="firstitem">C# .NET</li>
 			<li>WinForms</li>
 			<li>Microsoft SQL</li>
 			<li>Common Language Runtime</li>
 			<li>Unity Engine Scripting</li>
 		</ul>
-		<ul class="skillslist">
-			<li>Software testing practices</li>
+		<ul class="skillslist" id="tab_3">
+			<li class="firstitem">Software testing practices</li>
 			<li>Writing a test plan</li>
 			<li>Black/white box testing</li>
 			<li>Unit testing</li>
 			<li>Ad-hoc testing</li>
 		</ul>
-		<ul class="skillslist">
-			<li>Computer assembly and repair</li>
+		<ul class="skillslist" id="tab_4">
+			<li class="firstitem">Computer assembly and repair</li>
 			<li>Some networking (port forwarding, etc)</li>
 			<li>LAMP server setup/hosting</li>
 			<li>GNU/Linux installation and administration</li>
