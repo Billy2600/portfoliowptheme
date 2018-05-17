@@ -54,7 +54,7 @@ a:hover {
 	padding-left: 2%;
 }
 
-#hero, #about, #skills, #projects {
+#hero, #about, #skills, #projects, #blog, #contact {
 	padding-left: 0.5%;
 	padding-right: 0.5%;
 	padding-top: 2%;
@@ -85,6 +85,15 @@ a:hover {
 #projects {
 	background-color: #29648A;
 	overflow: hidden;
+}
+
+#blog {
+	background-color: #464866;
+}
+
+#contact {
+	background-color: #AAABB8;
+	color: #25274D;
 }
 
 .tablist, .skillslist {
@@ -129,16 +138,17 @@ a:hover {
 	list-style-type: none;
 	margin-left: 5%;
 	margin-right: 5%;
-	border: 1px solid green;
 	border-top: none;
-	background-color: darkgreen;
-	color: #fff;
+	background-color:#76b9e0;
+	border-top: 1px solid #464866;
+	color: #464866;
+	font-weight: 600;
 	padding: 0.5%;
 }
 
-.firstitem {
+/* .firstitem {
 	border-top: 1px solid green !important;
-}
+} */
 
 .fiftypercent {
 	margin-right: 55% !important;
@@ -158,4 +168,26 @@ a:hover {
 
 .ninetypercent {
 	margin-right: 15% !important;
+}
+
+.contactform {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.contactform input, .contactform textarea {
+	color: #25274D;
+	background-color: #fff;
+	padding: 0.5%;
+	display: block;
+	width: 60%;
+	border-bottom: 1px solid #25274D;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.contactform input[type="submit"] {
+	width: 61%; /* What the fuck? */
+	background-color: #25274D;
+	color: #AAABB8;
 }

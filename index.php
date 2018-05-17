@@ -12,7 +12,7 @@ get_header(); ?>
 	</section>
 
 	<section id="skills">
-		<h1 id="skills">Skills</h1>
+		<h1>Skills</h1>
 		You'll find my skills pretty varied, but here's some of what I can do and/or have experience with: <br />
 		<div class="tablist">
 			<a class="firsttab" href="javascript:showtab(0,5)">Web</a>
@@ -62,7 +62,7 @@ get_header(); ?>
 	</section>
 
 	<section id="projects">
-		<h2>Projects</h2>
+		<h1>Projects</h1>
 		<p>Here are things I have done in the past (both in-school and out).</p>
 		
 		<img src="/portfolio/img/bazoik_screenshot.jpg" alt="" style="float: left">
@@ -82,6 +82,20 @@ get_header(); ?>
         <img src="/portfolio/img/philosophers_screenshot.png" width="150" alt="" style="float: left">
         
 		<img src="/portfolio/img/tictactoe_screenshot.png" alt="" style="float: left">
+	</section>
+
+	<section id="blog">
+		<h1>Blog</h1>
+	</section>
+
+	<section id="contact">
+		<h1>Contact</h1>
+		<form class="contactform">
+			<input name="email" type="email" placeholder="Email Address">
+			<input name="subject" type="subject" placeholder="Subject">
+			<textarea name="message" placeholder="Enter message here"></textarea>
+			<input type="submit" value="Submit">
+		</form>
 	</section>
 
 <?php get_footer(); ?>
