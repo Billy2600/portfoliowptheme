@@ -86,23 +86,16 @@ get_header(); ?>
 
 	<section id="blog">
 		<h1>Blog</h1>
-		<div class="blogpost">
-			<img src="/img/uploads/thumbs/1_09072017002235screen%20shot%202016-04-22%20at%202.26.58%20pm.png">
-			<p>One word. Doom. It's a simple name that can invoke a lot of things. Deathmatch, modding, programming. Doom is and was a lot of things to a lot of people. It's also known for being ported to everything. Why is this the case? Why Doom and not its older brother Wolfenstein 3D? I have compiled a list of six reasons why I think that's the case, based on my own knowledge of Doom and programming in general.</p>
-			<p><a href="#" class="continuelink">Continue reading &raquo;</a></p>
-		</div>
-
-		<div class="blogpost">
-			<img src="/img/uploads/thumbs/1_04162017190334nes-classic-edition-box.png">
-			<p>I'm sure you remember the buzz around the launch of the Wii. The Wii was huge, everyone was talking about it, and it was a giant success for Nintendo. At the the time, I really wanted one, but I wasn't able to get one until a couple years after launch. "Not a big deal", I thought, "it was a huge seller, so it makes sense that stores couldn't keep it in stock." Now, I'm not sure if this was actually the case, or it was intentional under stocking by Nintendo, but Nintendo seems to have taken this idea and run with it in later years.</p>
-			<p><a href="#" class="continuelink">Continue reading &raquo;</a></p>
-		</div>
-
-		<div class="blogpost">
-			<img src="/img/uploads/thumbs/1_10222016121910Rayman2GreatEscape_DCBox.jpg">
-			<p>Some games fall into a category I call “mystical”. These games inspire the imagination and there seems to be more to the world than what you can see at face value. One of exemplary game series are that of the character Rayman. Just look at Rayman himself, he has no arms or legs, so his body parts just float! When I first played the demo for the Dreamcast version of Rayman 2 at nine years old, I knew it was something special. Though strangely, I didn’t really play Rayman 2 until this year. Perhaps it’s because when I rented Rayman 1 many years ago, I was put off by the crushing difficulty. Thankfully that’s not the case with the second one.</p>
-			<p><a href="#" class="continuelink">Continue reading &raquo;</a></p>
-		</div>
+		<?php
+			if(have_posts())
+			{
+				while (have_posts())
+				{
+					the_post();
+					get_template_part('templates/post', 'homepage');
+				}
+			}
+		?>
 	</section>
 
 	<section id="contact">
