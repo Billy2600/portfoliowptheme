@@ -95,17 +95,19 @@ get_header(); ?>
 					get_template_part('templates/post', 'homepage');
 				}
 			}
+			wp_reset_postdata();
 		?>
 	</section>
 
 	<section id="contact">
 		<h1>Contact</h1>
-		<form class="contactform">
+		<!-- <form class="contactform">
 			<input name="email" type="email" placeholder="Email Address" required>
 			<input name="subject" type="subject" placeholder="Subject" required>
 			<textarea name="message" placeholder="Enter message here" required></textarea>
 			<input type="submit" value="Submit">
-		</form>
+		</form> -->
+		<?php echo do_shortcode('[contact-form-7 id="27" title="Contact form 1"]'); ?>
 	</section>
 
 <?php get_footer(); ?>
