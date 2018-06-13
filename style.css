@@ -253,10 +253,9 @@ a:hover {
 	position: fixed;
 	background-color: #AAABB8;
 	color: #464866;
-	top: 15%;
-	left: 15%;
 	width: 80%;
 	height: 80%;
 	display: none;
 	padding: 2%;
+	margin-left: 10%;
 }
