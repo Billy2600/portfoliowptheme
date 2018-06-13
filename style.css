@@ -228,3 +228,25 @@ a:hover {
 	font-weight: 600;
 	font-size: 125%;
 }
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	display: none;
+}
+
+#modal {
+	position: fixed;
+	background-color: #AAABB8;
+	color: #464866;
+	top: 15%;
+	left: 15%;
+	width: 80%;
+	height: 80%;
+	display: none;

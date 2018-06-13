@@ -65,7 +65,7 @@ get_header(); ?>
 		<h1>Projects</h1>
 		<p>Here are things I have done in the past (both in-school and out).</p>
 		
-		<img src="/portfolio/img/bazoik_screenshot.jpg" alt="" style="float: left">
+		<a href="javascript:showmodal('modal_bazoik')"><img src="/portfolio/img/bazoik_screenshot.jpg" alt="" style="float: left"></a>
 		
 		<img src="/portfolio/img/vgcatalog_screenshot.png" alt="" style="float: left">
 		
