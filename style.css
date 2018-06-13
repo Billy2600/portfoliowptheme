@@ -88,6 +88,14 @@ a:hover {
 	overflow: hidden;
 }
 
+#projects img {
+	padding: 2%;
+	border: 1px solid #464866;
+	background-color: #25274D;
+	min-height: 110px;
+	margin: 0%;
+}
+
 #blog {
 	background-color: #464866;
 	overflow: hidden;
@@ -250,3 +258,5 @@ a:hover {
 	width: 80%;
 	height: 80%;
 	display: none;
+	padding: 2%;
+}
