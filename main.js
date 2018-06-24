@@ -21,7 +21,7 @@ function showmodal(content)
 	jQuery("#overlay").show();
 
 
-	var closeLink = '<br><a href="javascript:closemodal();">Close</a>';
+	var closeLink = '<br><a href="javascript:closemodal();" class="closemodal">&#10006;</a>';
 	jQuery("#modal").html(content + closeLink);
 	jQuery("#modal").show();
 }
