@@ -87,11 +87,13 @@ get_header(); ?>
 	<section id="blog">
 		<h1>Blog</h1>
 		<?php
-			if(have_posts())
+			$wp_query = new WP_Query("category_name=blog");
+
+			if($wp_query->have_posts())
 			{
-				while (have_posts())
+				while ($wp_query->have_posts())
 				{
-					the_post();
+					$wp_query->the_post();
 					get_template_part('templates/post', 'homepage');
 				}
 			}
