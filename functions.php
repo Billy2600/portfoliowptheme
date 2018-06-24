@@ -17,3 +17,4 @@ function twentysixhundred_scripts()
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/main.js', array( 'jquery' ), 1.1, false );
 }
 add_action( 'wp_enqueue_scripts', 'twentysixhundred_scripts');
+add_theme_support( 'post-thumbnails' );

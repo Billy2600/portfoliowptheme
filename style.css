@@ -88,12 +88,15 @@ a:hover {
 	overflow: hidden;
 }
 
-#projects img {
+.projecttile {
 	padding: 2%;
 	border: 1px solid #464866;
 	background-color: #25274D;
-	min-height: 110px;
 	margin: 0%;
+	margin-bottom: 0.3%;
+	display: inline-block;
+	min-height: 160px;
+	vertical-align: text-top;
 }
 
 #blog {

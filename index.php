@@ -65,23 +65,19 @@ get_header(); ?>
 		<h1>Projects</h1>
 		<p>Here are things I have done in the past (both in-school and out).</p>
 		
-		<a href="javascript:showmodal('modal_bazoik')"><img src="/portfolio/img/bazoik_screenshot.jpg" alt="" style="float: left"></a>
-		
-		<img src="/portfolio/img/vgcatalog_screenshot.png" alt="" style="float: left">
-		
-		<img src="/portfolio/img/blackrabbit_screenshot.png" alt="" style="float: left">
-		
-		<img src="/portfolio/img/dxm01_screenshot.png" alt="" style="float: left">
-		
-		<img src="/portfolio/img/combat_screenshot.png" alt="" style="float: left">
-		
-		<img src="/portfolio/img/rotw_screenshot.png" alt="" style="float: left">
-		
-		<img src="/portfolio/img/demonoid_screenshot.png" alt="" style="float: left">
-		
-        <img src="/portfolio/img/philosophers_screenshot.png" width="150" alt="" style="float: left">
-        
-		<img src="/portfolio/img/tictactoe_screenshot.png" alt="" style="float: left">
+		<?php
+			$wp_query = new WP_Query("category_name=projects");
+
+			if($wp_query->have_posts())
+			{
+				while ($wp_query->have_posts())
+				{
+					$wp_query->the_post();
+					get_template_part('templates/post', 'projects');
+				}
+			}
+			wp_reset_postdata();
+		?>
 	</section>
 
 	<section id="blog">
